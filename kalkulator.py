@@ -19,10 +19,10 @@ for pszyszly_rok in range(biezacy_rok, biezacy_rok + ile_lat +1):
             continue
     dzien_tygodnia = data.weekday()
     if dzien_tygodnia == 5:
-        print(f" {pszyszly_rok} - sobota") 
+        print(f" {przyszly_rok} - sobota") 
         znaleziono = True
     elif dzien_tygodnia == 6:
-        print(f" {pszyszly_rok} - niedziela")
+        print(f" {przyszly_rok} - niedziela")
         znaleziono = True
 
 if not znaleziono:
