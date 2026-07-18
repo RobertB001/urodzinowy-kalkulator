@@ -4,13 +4,15 @@ print("Podaj datę swoich urodzin:")
 rok = int(input("Rok urodzenia (np. 2013): "))
 miesiac = int(input("Miesiąc (1-12, np. 4): "))
 dzien = int(input("Dzień (np. 7): "))
-
 ile_lat = int(input("Do ilu lat w przód sprawdzić (np. 30): "))
 
-print(f"\nTwoje urodziny wypadają w weekend w tych latach:")
+dzis = datetime.date.today()
+biezacy_rok = dzis.year
 
+
+print(f"\nTwoje urodziny wypadają w weekend w tych latach:")
 znaleziono = False
-for pszyszly_rok in range(rok, rok + ile_lat +1):
+for pszyszly_rok in range(biezacy_rok, biezacy_rok + ile_lat +1):
     try:
         data = datetime.date(pszyszly_rok, miesiac, dzien)
     except ValueError:
