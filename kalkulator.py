@@ -14,7 +14,7 @@ print(f"\nTwoje urodziny wypadają w weekend w tych latach:")
 znaleziono = False
 for pszyszly_rok in range(biezacy_rok, biezacy_rok + ile_lat +1):
     try:
-        data = datetime.date(pszyszly_rok, miesiac, dzien)
+        data = datetime.date(przyszly_rok, miesiac, dzien)
     except ValueError:
             continue
     dzien_tygodnia = data.weekday()
